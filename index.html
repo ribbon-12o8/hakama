@@ -123,7 +123,24 @@
     flex-wrap: wrap;
   }
 
+.gallery {
+  display: flex;
+  gap: 20px;
 
+  overflow-x: auto;   /* 横スクロールON */
+  white-space: nowrap; /* 横並び維持 */
+  -webkit-overflow-scrolling: touch; /* スマホでぬるっと動く */
+}
+
+.photo {
+  width: 200px;
+  flex-shrink: 0; /* 縮まないようにする */
+  border-radius: 15px;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
 
   </style>
 </head>
