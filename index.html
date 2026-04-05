@@ -119,8 +119,10 @@
   gap: 20px;
 
   overflow-x: auto;   /* 横スクロールON */
+  overflow-y: hidden; /* 縦スクロールOFF */
   white-space: nowrap; /* 横並び維持 */
   -webkit-overflow-scrolling: touch; /* スマホでぬるっと動く */
+  touch-action: pan-x; /* スマホで横スクロール優先 */
 }
 
 .photo {
