@@ -105,6 +105,28 @@
       color: #59240c;
     }
 
+  .photo {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+  .photo:hover {
+      transform: scale(1.05);
+    }
+
+  .gallery {
+    display: flex;
+    gap: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
   </style>
 </head>
 
@@ -117,9 +139,16 @@
       <h2>MAIMU</h2>
     </a>
 
-    <a href="https://www.maimu.co.jp/hakama/products/t121/" target="_blank">
-      <img src="袴画像/ジュビってる.png">
-    </a>
+    <div class="gallery">
+      <a href="https://www.maimu.co.jp/hakama/products/t121/" target="_blank">
+        <img src="袴画像/ジュビってる.png" class="photo">
+      </a>
+
+      <a href="https://www.maimu.co.jp/hakama/products/140/" target="_blank">
+        <img src="袴画像/紫かわい.png" class="photo">
+      </a>
+    </div>
+
   </div>
 
   <div class="card fade-in"> 
